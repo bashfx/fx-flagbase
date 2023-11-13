@@ -24,19 +24,24 @@ if [ "${BASH_VERSINFO[0]}" -lt 4 ]; then
   echo "Some 4.0+ bashism used, but can be refactored to support 3"
   exit 1
 fi
-#-------------------------------------------------------------------------------
-# Vars
-#-------------------------------------------------------------------------------
-DEFAULT_HOME="$HOME/.my/etc/fx/flags"
-#DEFAULT_EXPORT="$PWD/flagx.out"
 
-FLAGX_HOME=${FLAGX_HOME:-"$DEFAULT_HOME"}
-FLAGX_EXPORT_PATH="$HOME/exports"
+
+#-------------------------------------------------------------------------------
+# Customizable Vars (change in your .profile not here)
+#-------------------------------------------------------------------------------
+
+FLAGX_HOME=${FLAGX_HOME:-"$HOME/.my/etc/fx/flags"}
+FLAGX_CURSOR_HOME=${FLAGX_CURSOR_HOME:-"$HOME/.flagx"}
+FLAGX_EXPORT_PATH=${FLAGX_EXPORT_PATH:-"$HOME/exports"}
+
+#-------------------------------------------------------------------------------
+# System Vars
+#-------------------------------------------------------------------------------
 
 SESSION_DIR="$FLAGX_HOME/session.d"
 KEYFILE_DIR="$FLAGX_HOME/keyfile.d"
 PRIVATE_DIR="$FLAGX_HOME/private.d"
-ACTIVE_SESSION_FILE="$HOME/.flagx"
+ACTIVE_SESSION_FILE="$FLAGX_CURSOR_HOME"
 
 session_id=
 opt_debug=0
