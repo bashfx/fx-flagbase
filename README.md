@@ -18,19 +18,20 @@ Set up FX-FLAGBASE by configuring the following environment variables in your `.
 export FLAGX_HOME=<your_flagx_home_directory>  # The home directory for FLAGBASE files
 export FLAGX_CURSOR_HOME=$HOME/.flagx          # Location for the active session cursor file
 export FLAGX_EXPORT_PATH=$HOME/exports         # Export path for the script outputs
-
+```
 
 Move the FX-FLAGBASE script to a local bin directory or create a symlink to it, for example:
 
 ```bash
 ln -s /path/to/fx-flagbase /usr/local/bin/kvfb
+```
 
 ## Usage
 Invoke FX-FLAGBASE commands using the kvfb command:
 
 ```bash
 kvfb [options] [command] <arguments...>
-
+```
 
 ###  Session Commands
 - `kvfb new|n <session>`: Start a new session with a specified or random name.
