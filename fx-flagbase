@@ -8,6 +8,13 @@
 #              |___/
 #
 #-------------------------------------------------------------------------------
+#$ name:fx-flagbase (kvfb)
+#$ author:qodeninja
+#$ date:
+#$ semver:
+#$ autobuild: 00007
+#
+#
 # Note
 # - very alpha version!
 # - mac systems with bash 4+ support, not tested on general *nix
@@ -16,6 +23,9 @@
 # - some general testing for primary use case, edges cases likely to fail
 # - forcing paths for "safety", if you want to override paths have to
 #   manually do it.
+#
+#
+#=====================================code!=====================================
 #-------------------------------------------------------------------------------
 # Version
 #-------------------------------------------------------------------------------
